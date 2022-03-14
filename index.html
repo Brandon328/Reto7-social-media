@@ -18,22 +18,23 @@
 </head>
 
 <body>
-  <main>
+  <main id="main">
     <section class="header">
-      <div class="headers-container">
+      <div>
         <h1>Social Media Dashboard</h1>
         <p>Total Followers: 23,004</p>
       </div>
-      <div class="toggle-container">
+      <div>
         <span>Dark Mode</span>
         <label id="switch">
           <input type="checkbox">
-          <span id="switch-slider" class="round"></span>
+          <span id="switch-slider"></span>
         </label>
       </div>
     </section>
-    <section class="cards-container">
-      <div class="dashboard-card">
+
+    <section class="dashboard-card-container cards-container">
+      <div class="dashboard-card facebook-card">
         <div class="social-address-container">
           <img src="images/icon-facebook.svg" alt="facebook icon">
           <span>@nathanf</span>
@@ -41,13 +42,55 @@
         <span class="num-followers">1987</span>
         <span class="followers-span">FOLLOWERS</span>
         <div class="updown-container">
-          <img class="green" src="images/icon-up.svg" alt="icon up">
-          <span>12 Today</span>
+          <img src="images/icon-up.svg" alt="icon up">
+          <span class="up-green">12 Today</span>
+        </div>
+      </div>
+
+      <div class="dashboard-card twitter-card">
+        <div class="social-address-container">
+          <img src="images/icon-twitter.svg" alt="twitter icon">
+          <span>@nathanf</span>
+        </div>
+        <span class="num-followers">1044</span>
+        <span class="followers-span">FOLLOWERS</span>
+        <div class="updown-container">
+          <img src="images/icon-up.svg" alt="icon up">
+          <span class="up-green">99 Today</span>
+        </div>
+      </div>
+
+      <div class="dashboard-card instragram-card">
+        <div class="social-address-container">
+          <img src="images/icon-instagram.svg" alt="instagram icon">
+          <span>@realnathanf</span>
+        </div>
+        <span class="num-followers">11k</span>
+        <span class="followers-span">FOLLOWERS</span>
+        <div class="updown-container">
+          <img src="images/icon-up.svg" alt="icon up">
+          <span class="up-green">1099 Today</span>
+        </div>
+      </div>
+
+      <div class="dashboard-card youtube-card">
+        <div class="social-address-container">
+          <img src="images/icon-youtube.svg" alt="youtube icon">
+          <span>Nathan F.</span>
+        </div>
+        <span class="num-followers">8239</span>
+        <span class="followers-span">SUBSCRIBERS</span>
+        <div class="updown-container">
+          <img src="images/icon-down.svg" alt="icon up">
+          <span class="down-red">144 Today</span>
         </div>
       </div>
     </section>
+
     <h2>Overview - Today</h2>
-    <section class="cards-container">
+
+    <section class="overview-card-container cards-container">
+
       <div class="overview-card">
         <div>
           <span>Page Views</span>
@@ -57,23 +100,111 @@
           <span>87</span>
           <div>
             <img src="images/icon-up.svg" alt="icon up">
-            <span>3%</span>
+            <span class="up-green">3%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview-card">
+        <div>
+          <span>Likes</span>
+          <img src="images/icon-facebook.svg" alt="facebook icon">
+        </div>
+        <div>
+          <span>52</span>
+          <div>
+            <img src="images/icon-down.svg" alt="icon down">
+            <span class="down-red">2%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview-card">
+        <div>
+          <span>Likes</span>
+          <img src="images/icon-instagram.svg" alt="instagram icon">
+        </div>
+        <div>
+          <span>5462</span>
+          <div>
+            <img src="images/icon-up.svg" alt="icon up">
+            <span class="up-green">2257%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview-card">
+        <div>
+          <span>Profile Views</span>
+          <img src="images/icon-instagram.svg" alt="instagram icon">
+        </div>
+        <div>
+          <span>52k</span>
+          <div>
+            <img src="images/icon-up.svg" alt="icon up">
+            <span class="up-green">1375%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview-card">
+        <div>
+          <span>Retweets</span>
+          <img src="images/icon-twitter.svg" alt="twitter icon">
+        </div>
+        <div>
+          <span>117</span>
+          <div>
+            <img src="images/icon-up.svg" alt="icon up">
+            <span class="up-green">303%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview-card">
+        <div>
+          <span>Likes</span>
+          <img src="images/icon-twitter.svg" alt="twitter icon">
+        </div>
+        <div>
+          <span>507</span>
+          <div>
+            <img src="images/icon-up.svg" alt="icon up">
+            <span class="up-green">553%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview-card">
+        <div>
+          <span>Likes</span>
+          <img src="images/icon-youtube.svg" alt="youtube icon">
+        </div>
+        <div>
+          <span>107</span>
+          <div>
+            <img src="images/icon-down.svg" alt="icon down">
+            <span class="down-red">19%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview-card">
+        <div>
+          <span>Total Views</span>
+          <img src="images/icon-youtube.svg" alt="youtube icon">
+        </div>
+        <div>
+          <span>1407</span>
+          <div>
+            <img src="images/icon-down.svg" alt="icon down">
+            <span class="down-red">12%</span>
           </div>
         </div>
       </div>
     </section>
   </main>
+  <script src="main.js"></script>
 </body>
 
 </html>
-<!-- @nathanf 1044 Followers 99 Today
-@realnathanf 11k Followers 1099 Today
-Nathan F. 8239 Subscribers 144 Today
-
-Likes 52 2%
-Likes 5462 2257%
-Profile Views 52k 1375%
-Retweets 117 303%
-Likes 507 553%
-Likes 107 19%
-Total Views 1407 12% -->
